@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
-import { StyleSheet, Text, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
 import MealsNavigator from "./Navigation/MealsNavigator";
+import {enableScreens} from 'react-native-screens';
+
+enableScreens();
 
 const fetchFonts = () => {
     Font.loadAsync({
@@ -28,10 +31,10 @@ export default function App() {
     );
 }
 const styles = StyleSheet.create({
-    screen:{
-        flex:1,
-        alignItems:'center',
-        justifyContent:'center',
+    screen: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
     }
 })
 
